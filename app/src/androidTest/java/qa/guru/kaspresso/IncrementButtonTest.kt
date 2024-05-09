@@ -4,13 +4,14 @@ import android.Manifest
 import androidx.test.ext.junit.rules.activityScenarioRule
 import androidx.test.rule.GrantPermissionRule
 import com.kaspersky.components.alluresupport.withAllureSupport
+import com.kaspersky.components.alluresupport.withForcedAllureSupport
 import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
 import org.junit.Rule
 import org.junit.Test
 
 class IncrementButtonTest : TestCase(
-    kaspressoBuilder = Kaspresso.Builder.withAllureSupport()
+    kaspressoBuilder = Kaspresso.Builder.withForcedAllureSupport (  )
 ) {
 
     @get:Rule
